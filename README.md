@@ -1,7 +1,13 @@
 # 📰 News Hub - React + FastAPI
 
-News Hub is a full-stack news application built using **React.js** and **FastAPI**.  
-The application provides latest news articles with category filtering, search functionality, infinite scrolling, and a separate backend API.
+A full-stack news application built using **React.js** and **FastAPI**.  
+News Hub provides latest news articles with category filtering, search functionality, infinite scrolling, and a dedicated backend API.
+
+🌐 **Live Demo:**  
+https://news-hub-app-react.netlify.app/
+
+⚡ **Backend API:**  
+https://newshub-backend-yruk.onrender.com/
 
 ---
 
@@ -19,32 +25,36 @@ The application provides latest news articles with category filtering, search fu
   - Technology
 - ♾️ Infinite Scroll Pagination
 - ⏳ Loading Progress Bar
-- 📱 Responsive Design using Bootstrap
+- 📱 Fully Responsive Design
 - ⚡ FastAPI Backend API
 - 🖼️ Fallback Images for Missing News Images
+- 🔗 REST API Integration
+- 🌍 Frontend & Backend Deployment
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
-### Frontend
+## Frontend
 
 - React.js
 - React Router DOM
 - Bootstrap
 - React Infinite Scroll Component
 - React Top Loading Bar
+- JavaScript (ES6)
 
-### Backend
+## Backend
 
 - Python
 - FastAPI
 - Requests
 - BeautifulSoup
+- Uvicorn
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```
 News-Hub-React
@@ -64,6 +74,7 @@ News-Hub-React
 │   └── requirements.txt
 │
 ├── public
+│
 ├── package.json
 └── README.md
 ```
@@ -72,13 +83,13 @@ News-Hub-React
 
 # ⚙️ Installation & Setup
 
-## 1. Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/abdullahshabir31/News-Hub-React.git
 ```
 
-Go to project folder:
+Go to project directory:
 
 ```bash
 cd News-Hub-React
@@ -86,7 +97,7 @@ cd News-Hub-React
 
 ---
 
-# Frontend Setup (React)
+# 💻 Frontend Setup (React)
 
 Install dependencies:
 
@@ -94,7 +105,7 @@ Install dependencies:
 npm install
 ```
 
-Start React server:
+Run React application:
 
 ```bash
 npm start
@@ -108,7 +119,7 @@ http://localhost:3000
 
 ---
 
-# Backend Setup (FastAPI)
+# 🐍 Backend Setup (FastAPI)
 
 Open another terminal:
 
@@ -124,7 +135,7 @@ Create virtual environment:
 python -m venv venv
 ```
 
-Activate virtual environment:
+Activate environment:
 
 Windows:
 
@@ -132,13 +143,13 @@ Windows:
 venv\Scripts\activate
 ```
 
-Install required packages:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Start FastAPI server:
+Run FastAPI server:
 
 ```bash
 uvicorn main:app --reload
@@ -160,13 +171,13 @@ http://127.0.0.1:8000/docs
 
 # 🔗 API Endpoint
 
-### Get News
+## Get News Articles
 
 ```
 GET /news
 ```
 
-Parameters:
+### Query Parameters:
 
 ```
 country
@@ -183,26 +194,41 @@ http://127.0.0.1:8000/news?country=us&category=technology&page=1&pageSize=10
 
 ---
 
+# 🌍 Deployment
+
+Frontend deployed on:
+
+🔗 Netlify  
+https://news-hub-app-react.netlify.app/
+
+Backend deployed on:
+
+🔗 Render  
+https://newshub-backend-yruk.onrender.com/
+
+---
+
 # 📸 Screenshots
 
-Add your project screenshots here.
+Add application screenshots here.
 
 ---
 
 # 🔮 Future Improvements
 
-- User Authentication
-- Save Favorite Articles
-- Dark Mode
-- News Details Page
-- Deploy Frontend and Backend
-- Database Integration
+- 🔐 User Authentication
+- ❤️ Save Favorite Articles
+- 🌙 Dark Mode
+- 📄 News Details Page
+- 🗄️ Database Integration
+- 👤 User Profiles
+- 📱 Better Mobile UI
 
 ---
 
 # 👨‍💻 Author
 
-**Abdullah Shabir**
+## Abdullah Shabir
 
 GitHub:  
 https://github.com/abdullahshabir31
