@@ -16,7 +16,7 @@ const News = (props) => {
 
   const updateNews = async () => {
     props.setProgress(10);
-    const url = `http://127.0.0.1:8000/news?country=${props.country}&category=${props.category}&page=${page}&pageSize=${props.pageSize}`;
+    const url = `https://newshub-backend-yruk.onrender.com/news?country=${props.country}&category=${props.category}&page=${page}&pageSize=${props.pageSize}`;
     setLoading(true);
     let data = await fetch(url);
     props.setProgress(40);
@@ -35,12 +35,14 @@ const News = (props) => {
   }, []);
 
   const fetchMoreData = async () => {
-    const url = `http://127.0.0.1:8000/news?country=${
-      props.country
-    }&category=${props.category}&page=${page + 1}&pageSize=${props.pageSize}`;
-    setPage(page + 1);
+    const nextPage = page + 1;
+
+    const url = `https://newshub-backend-yruk.onrender.com/news?country=${props.country}&category=${props.category}&page=${nextPage}&pageSize=${props.pageSize}`;
+
     let data = await fetch(url);
     let parsedData = await data.json();
+
+    setPage(nextPage);
     setArticles(articles.concat(parsedData.articles));
     setTotalResults(parsedData.totalResults);
   };
